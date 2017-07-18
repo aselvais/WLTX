@@ -1,27 +1,31 @@
 {
-	"name": "WLTX",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-	  "start": "node node_modules/react-native/local-cli/cli.js start",
-	  "test": "jest",
-	  "run-ios": "react-native run-ios",
-	  "run-android": "react-native run-android",
-	  "log-ios": "react-native log-ios",
-	  "log-android": "react-native log-android",
-	  "build-ios": "react-native run-ios --configuration Release"
-	},
-	"dependencies": {
-		"react": "16.0.0-alpha.12",
-		"react-native": "0.46.3"
-	},
-	"devDependencies": {
-		"babel-jest": "20.0.3",
-		"babel-preset-react-native": "2.1.0",
-		"jest": "20.0.4",
-		"react-test-renderer": "16.0.0-alpha.12"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  "name": "WLTX",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "run-ios": "react-native run-ios",
+    "run-android": "react-native run-android",
+    "log-ios": "react-native log-ios",
+    "log-android": "react-native log-android",
+    "build-ios": "react-native run-ios --configuration Release"
+  },
+  "dependencies": {
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.46.3",
+    "react-native-elements": "^0.14.0",
+    "react-native-vector-icons": "^4.2.0",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
 }
