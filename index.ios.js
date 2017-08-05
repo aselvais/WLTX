@@ -1,13 +1,7 @@
-import React, { Component } from 'react';
-import {
-  AppRegistry,
-} from 'react-native';
-import Main from './src/views/Main';
+'use strict';
 
-export default class WLTX extends Component {
-  render() {
-    return (<Main/>);
-  }
-}
+import React, { AppRegistry } from 'react-native';
+import App from './app/containers/app';
 
-AppRegistry.registerComponent('WLTX', () => WLTX);
+AppRegistry.registerComponent('WLTX', () => App);
+

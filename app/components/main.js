@@ -11,19 +11,33 @@ import { Button } from 'react-native-elements';
  *
  */
 class Main extends Component {
+	/**
+	 *
+	 * @param props
+	 */
+	constructor(props) {
+		super(props);
+	}
+
+	/**
+	 *
+	 * @returns {XML}
+	 */
 	render() {
+		const {main, increment, decrement} = this.props;
 		return (
 			<View style={styles.container}>
 				<View style={{ padding: 10 }}>
 					<Text style={styles.welcome}>
-						Welcome to WLTx!
+						Welcome to WLTx "{main}" !
 					</Text>
 				</View>
 				<View style={{ padding: 10 }}>
 					<Button raised
 							backgroundColor="#0000FF"
 							icon={{name: 'cached'}}
-							title='BUTTON WITH ICON' />
+							title='BUTTON WITH ICON'
+							onPress={increment}/>
 				</View>
 				<View style={{ padding: 10 }}>
 				<Button
@@ -31,7 +45,8 @@ class Main extends Component {
 					large
 					icon={{name: 'squirrel', type: 'octicon' }}
 					backgroundColor="#FF0000"
-					title='OCTICON' />
+					title='OCTICON'
+					onPress={decrement}/>
 				</View>
 			</View>
 		);
